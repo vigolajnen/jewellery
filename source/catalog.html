@@ -61,7 +61,7 @@
     <div class="catalog container">
       <aside class="catalog__sidebar">
         <button class="catalog__btn" type="button">Filter</button>
-        <form class="catalog__form" method="POST">
+        <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="accordion">
             <div class="accordion__item accordion__item--active">
               <div class="accordion__header">
@@ -397,6 +397,119 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup popup--login">
+      <div class="popup__wrapper">
+        <button class="popup__close" type="button" aria-label="Закрыть окно">
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2>Log In</h2>
+        <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="login-email" aria-label="Your E-mail">
+            <input
+              id="login-email"
+              name="login-email"
+              type="email"
+              placeholder="Your E-mail"
+            />
+          </label>
+          <label for="login-password" aria-label="Password">
+            <input
+              id="login-password"
+              name="login-password"
+              type="password"
+              placeholder="Password"
+            />
+            <a href="#">Forgot your password?</a>
+          </label>
+          <button type="submit">Log In</button>
+          <p>Don’t have an account? <a href="#">Sign up</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup--filter popup--active">
+      <div class="popup__wrapper">
+        <button class="popup__close" type="button" aria-label="Закрыть окно">
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="catalog__form form-filter" action="https://echo.htmlacademy.ru" method="post">
+          <div class="accordion">
+            <div class="accordion__item accordion__item--active">
+              <div class="accordion__header">
+                <h3>Product</h3>
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-acc-arrow"></use>
+                </svg>
+              </div>
+              <div class="accordion__text">
+                <label for="product-1">
+                  <input id="product-1" type="checkbox" name="product-1" />
+                  Necklaces
+                </label>
+                <label for="product-2">
+                  <input id="product-2" type="checkbox" name="product-2" />
+                  Chokers
+                </label>
+                <label for="product-3">
+                  <input id="product-3" type="checkbox" name="product-3" />
+                  Rings
+                </label>
+                <label for="product-4">
+                  <input id="product-4" type="checkbox" name="product-4" />
+                  Earrings
+                </label>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <h3>Material</h3>
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-acc-arrow"></use>
+                </svg>
+              </div>
+              <div class="accordion__text">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <h3>Collection</h3>
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-acc-arrow"></use>
+                </svg>
+              </div>
+              <div class="accordion__text">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <h3>Price</h3>
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-acc-arrow"></use>
+                </svg>
+              </div>
+              <div class="accordion__text">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Apply</button>
+          <button type="reset">Clear All</button>
+        </form>
+      </div>
+    </div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/script.js"></script>
