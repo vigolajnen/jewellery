@@ -252,6 +252,72 @@
       </div>
     </footer>
 
+    <div class="popup popup--login">
+      <div class="popup__wrapper">
+        <button class="popup__close" type="button" aria-label="Закрыть окно">
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2>Log In</h2>
+        <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="login-email" aria-label="Your E-mail">
+            <input id="login-email" name="login-email" type="email" placeholder="Your E-mail">
+          </label>
+          <label for="login-password" aria-label="Password">
+            <input id="login-password" name="login-password" type="password" placeholder="Password">
+            <a href="#">Forgot your password?</a>
+          </label>
+          <button type="submit">Log In</button>
+          <p>Don’t have an account? <a href="#">Sign up</a></p>
+        </form>
+      </div>
+    </div>
+    <div class="popup popup--add-cart">
+      <div class="popup__wrapper">
+        <button class="popup__close" type="button" aria-label="Закрыть окно">
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2>The item was added to your cart</h2>
+        <div class="add-cart">
+          <div class="add-cart__item">
+            <div class="add-cart__product">
+              <div class="add-cart__pic">
+                <img src="img/popup/necklace-detail.jpg" alt="necklace">
+              </div>
+              <div class="add-cart__info">
+                <h3>Gold Necklace</h3>
+                <div class="add-cart__price">$ 115</div>
+              </div>
+            </div>
+            <div class="add-cart__count">
+              <button type="button" aria-label="Кнопка плюс">
+                <svg width="14" height="14">
+                  <use xlink:href="img/sprite_auto.svg#icon-plus"></use>
+                </svg>
+              </button>
+              <input class="update-input" type="text" name="quantity" value="1">
+              <button type="button" aria-label="Кнопка минус">
+                <svg width="14" height="14">
+                  <use xlink:href="img/sprite_auto.svg#icon-minus"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="add-cart__item">
+            <p>You have 1 item in the cart</p>
+            <div class="add-cart__total">Cart subtotal: $ 115</div>
+          </div>
+          <div class="add-cart__item">
+            <a href="catalog.html">Continue shopping</a>
+            <a href="#">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/vendor.min.js"></script>
     <script src="js/script.js"></script>
   </body>
