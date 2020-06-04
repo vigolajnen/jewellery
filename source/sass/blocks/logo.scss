@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+  max-width: 137px;
+
+  @media (max-width: $mobile) {
+    max-width: 120px;
+  }
+
+  & img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

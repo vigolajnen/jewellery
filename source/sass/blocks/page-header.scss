@@ -1,0 +1,154 @@
+.page-header {
+  position: relative;
+
+  padding-bottom: 100px;
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  &__nav {
+    border-top: 1px solid #f6f5f4;
+    border-bottom: 1px solid #f6f5f4;
+  }
+
+  &__search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #9b9997;
+
+    text-decoration: none;
+
+    & svg {
+      height: 14px;
+    }
+  }
+
+  &__login-and-cart {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__login-popup {
+    font-family: "Poppins Bold", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #1d1613;
+
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      border-radius: 0;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  &__cart {
+    font-family: "Poppins Bold", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #1d1613;
+
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      border-radius: 0;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  &__promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 195px;
+    padding-bottom: 195px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #6d5644;
+    background-image: url("../img/promo/promo-bg.jpg");
+
+    &--cat {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-image: url("../img/promo/promo-cat.jpg");
+    }
+
+    & h1 {
+      margin: 0;
+      font-family: $titleFont;
+
+      font-style: normal;
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 130%;
+      /* or 58px */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #ffffff;
+
+      text-transform: uppercase;
+    }
+
+    & p {
+      margin: 0;
+      font-family: $titleFontItalic;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 38px;
+      line-height: 130%;
+      /* or 49px */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+}

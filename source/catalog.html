@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jewellery | Catalog</title>
+    <meta name="description" content="Текст" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header__top container">
+        <a class="page-header__search" href="#"
+          ><svg width="25" height="54">
+            <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+          </svg>
+          Type here to search</a
+        >
+        <a class="page-header__logo logo" href="main.html">
+          <img src="img/logo.svg" alt="Логотип" />
+        </a>
+        <div class="page-header__login-and-cart">
+          <button class="page-header__login-popup" type="button">Login</button>
+          <div class="page-header__cart">Cart <span>0</span></div>
+        </div>
+      </div>
+      <div class="page-header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">What’s new</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Chokers</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Necklaces</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Rings</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Earrings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-header__promo page-header__promo--cat">
+        <h1>All Jewellery</h1>
+        <p>
+          Discover picks of fashion's finest trends in our jewellery catalog
+        </p>
+      </div>
+    </header>
+
+    <div class="catalog container">
+      <aside class="catalog__sidebar">
+        <form class="catalog__form" method="POST">
+          <div class="accordion">
+            <div class="accordion__item accordion__item--active">
+              <div class="accordion__header">
+                <h3>Product</h3>
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-acc-arrow"></use>
+                </svg>
+              </div>
+              <div class="accordion__text">
+                <label for="product-1">
+                  <input id="product-1" type="checkbox" name="product-1" />
+                  Necklaces
+                </label>
+                <label for="product-2">
+                  <input id="product-2" type="checkbox" name="product-2" />
+                  Chokers
+                </label>
+                <label for="product-3">
+                  <input id="product-3" type="checkbox" name="product-3" />
+                  Rings
+                </label>
+                <label for="product-4">
+                  <input id="product-4" type="checkbox" name="product-4" />
+                  Earrings
+                </label>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <h3>Material</h3>
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-acc-arrow"></use>
+                </svg>
+              </div>
+              <div class="accordion__text">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <h3>Collection</h3>
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-acc-arrow"></use>
+                </svg>
+              </div>
+              <div class="accordion__text">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </div>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__header">
+                <h3>Price</h3>
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#icon-acc-arrow"></use>
+                </svg>
+              </div>
+              <div class="accordion__text">
+                Our jewellerry is made of solid gold, silver or leather. Also,
+                some jewellery contains precious and semiprecious stones and
+                crystals.
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Apply</button>
+          <button type="reset">Clear All</button>
+        </form>
+      </aside>
+      <div class="catalog__content">
+        <div class="catalog__wrapper">
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/double-pearl-earrings.jpg"
+              srcset="img/catalog/double-pearl-earrings@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Double pearl earrings</h3>
+            <div class="product-preview__price">$ 115</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/black-choker-gold-bead.jpg"
+              srcset="img/catalog/black-choker-gold-bead@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Choker with gold bead</h3>
+            <div class="product-preview__price">$ 55</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/gold-layered-necklace.jpg"
+              srcset="img/catalog/gold-layered-necklace@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Gold layered necklace</h3>
+            <div class="product-preview__price">$ 155</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/blue-gemstone-pendant.jpg"
+              srcset="img/catalog/blue-gemstone-pendant@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Blue gemstone pendant</h3>
+            <div class="product-preview__price">$ 105</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/boho-earrings.jpg"
+              srcset="mg/catalog/boho-earrings@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Boho earrings</h3>
+            <div class="product-preview__price">$ 75</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/bird-necklace.jpg"
+              srcset="img/catalog/bird-necklace@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Gold bird necklace</h3>
+            <div class="product-preview__price">$ 135</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/black-leather-choker-necklace.jpg"
+              srcset="img/catalog/black-leather-choker-necklace@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Black leather choker</h3>
+            <div class="product-preview__price">$ 85</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/purple-gemstone-necklace.jpg"
+              srcset="img/catalog/purple-gemstone-necklace@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Necklace with amethyst</h3>
+            <div class="product-preview__price">$ 145</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/elephant-earrings.jpg"
+              srcset="img/catalog/elephant-earrings@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Elephant earrings</h3>
+            <div class="product-preview__price">$ 95</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/threader-necklace-closeup.jpg"
+              srcset="img/catalog/threader-necklace-closeup@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Threader necklace</h3>
+            <div class="product-preview__price">$ 115</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/origami-crane-necklace.jpg"
+              srcset="img/catalog/origami-crane-necklace@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Origami crane necklace</h3>
+            <div class="product-preview__price">$ 105</div>
+          </a>
+          <a class="catalog__item product-preview" href="#">
+            <!-- 1х: 270px; 2x: 540px -->
+            <img
+              src="img/catalog/marble-earrings.jpg"
+              srcset="img/catalog/marble-earrings@2x.jpg 2x"
+              width="270px"
+              height="272px"
+              alt="pic"
+            />
+            <h3>Marble earrings</h3>
+            <div class="product-preview__price">$ 95</div>
+          </a>
+        </div>
+        <div class="catalog__nav">
+          <div class="catalog__button-prev">Previous</div>
+          <div class="catalog__pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+          </div>
+          <div class="catalog__button-next">Next</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__subscription subscription">
+          <div class="subscription__header">
+            <h3>The good stuff in your inbox</h3>
+            <p>News and updates from CH. No spam, we promise.</p>
+          </div>
+          <form
+            class="subscription__form"
+            action="https://echo.htmlacademy.ru"
+            method="post"
+          >
+            <label for="email" aria-label="Your E-mail">
+              <input
+                id="subscription-email"
+                type="email"
+                name="email"
+                placeholder="Your E-mail"
+              />
+            </label>
+            <button type="submit">
+              Sign Up
+              <svg width="30" height="20">
+                <use xlink:href="img/sprite_auto.svg#icon-white-arrow"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="page-footer__nav">
+          <div class="page-footer__nav-item">
+            <ul class="page-footer__list">
+              <li>
+                <a href="#">Ordering & Payment</a>
+              </li>
+              <li>
+                <a href="#">Terms & Condition</a>
+              </li>
+              <li>
+                <a href="#">Returns & Exchanges</a>
+              </li>
+              <li>
+                <a href="#">Delivery</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__nav-item">
+            <ul class="page-footer__list">
+              <li>
+                <a href="#">About CH</a>
+              </li>
+              <li>
+                <a href="#">Stores & Hours</a>
+              </li>
+              <li>
+                <a href="#">Jobs</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Наш fb">
+                  <svg class="social__icon" width="25" height="54">
+                    <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                  <svg class="social__icon" width="25" height="54">
+                    <use xlink:href="img/sprite_auto.svg#icon-inst"></use>
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Наш tw">
+                  <svg class="social__icon" width="25" height="54">
+                    <use xlink:href="img/sprite_auto.svg#icon-pint"></use>
+                  </svg>
+                  Pinterest
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" aria-label="Наш Инстаграм">
+                  <svg class="social__icon" width="25" height="54">
+                    <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
+                  </svg>
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

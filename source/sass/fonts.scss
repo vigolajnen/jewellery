@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Poppins";
+  font-display: auto;
+  src: url("../fonts/Poppinsregular.woff2") format("woff2"),
+    url("../fonts/Poppinsregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  font-display: auto;
+  src: url("../fonts/Poppinsbold.woff") format("woff2"),
+    url("../fonts/Poppinsbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-display: auto;
+  src: url("../fonts/Cormorantgaramond.woff2") format("woff2"),
+    url("../fonts/Cormorantgaramond.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond Italic";
+  font-display: auto;
+  src: url("../fonts/Cormorantgaramonditalic.woff") format("woff2"),
+    url("../fonts/Cormorantgaramonditalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

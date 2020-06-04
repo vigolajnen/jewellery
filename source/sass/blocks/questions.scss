@@ -1,0 +1,14 @@
+.questions {
+  padding-top: 30px;
+  padding-bottom: 100px;
+
+  & h2 {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__accordion {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+}

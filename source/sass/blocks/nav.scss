@@ -1,0 +1,39 @@
+.nav {
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &--hide {
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    &__item {
+    }
+
+    & a {
+      padding: 23px 20px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+
+      text-decoration: none;
+
+      color: $primary-color;
+
+      &:focus &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

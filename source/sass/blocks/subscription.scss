@@ -1,0 +1,83 @@
+.subscription {
+  &__header {
+    & h3 {
+      margin: 0;
+      margin-bottom: 25px;
+      font-family: "Cormorant Garamond", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 34px;
+      line-height: 130%;
+
+      letter-spacing: 0.03em;
+    }
+
+    & p {
+      margin: 0;
+      margin-bottom: 25px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 130%;
+
+      color: #9b9997;
+    }
+  }
+
+  &__form {
+    position: relative;
+    padding-top: 25px;
+    box-sizing: border-box;
+    & label {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    & input {
+      width: 100%;
+      padding: 10px 105px 10px 0;
+      color: #9B9997;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #ffffff;
+
+      outline: none;
+
+      box-sizing: border-box;
+
+      &::placeholder {
+        color: #9B9997;
+        background-color: transparent;
+      }
+    }
+
+    & button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      display: flex;
+      align-items: center;
+
+      padding: 10px 0;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
+      color: #ffffff;
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+      outline: none;
+      box-sizing: border-box;
+
+      cursor: pointer;
+
+      & svg {
+        margin-left: 10px;
+        fill: #ffffff;
+      }
+    }
+  }
+}

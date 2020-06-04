@@ -1,0 +1,50 @@
+.tabs {
+  position: relative;
+  padding-top: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  &__item {
+    position: relative;
+
+    margin-right: 35px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+
+    
+    color: #9b9997;
+
+    outline: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    &--active {
+      position: relative;
+      color: #1d1613;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

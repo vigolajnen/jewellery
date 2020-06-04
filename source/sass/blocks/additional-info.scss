@@ -1,0 +1,28 @@
+.additional-info {
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #1d1613;
+
+    border-bottom: 1px solid #F6F5F4;
+  }
+
+  &__name {
+    font-weight: 500;
+  }
+
+
+}

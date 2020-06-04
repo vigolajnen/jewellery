@@ -1,0 +1,52 @@
+.page-footer {
+  padding: 100px;
+  background-color: #000000;
+  color: #ffffff;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0;
+
+    width: 100%;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    margin-right: 80px;
+    list-style: none;
+
+    & li {
+      margin-bottom: 20px;
+    }
+
+    & a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  &__social {
+    & li {
+      margin-bottom: 20px;
+    }
+
+    & svg {
+      fill: #ffffff;
+    }
+  }
+}

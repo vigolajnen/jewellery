@@ -1,0 +1,27 @@
+.social {
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    display: block;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__icon {
+    height: 15px;
+  }
+}
