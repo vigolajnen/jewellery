@@ -1,10 +1,23 @@
 .page-footer {
   padding: 100px;
+  padding-bottom: 50px;
   background-color: #000000;
   color: #ffffff;
 
+  @media (max-width: $desktop) {
+    padding: 60px 60px 10px 45px;
+  }
+
   @media (max-width: $table) {
-    padding: 60px 160px 60px 45px;
+    padding: 60px 45px 10px 45px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 60px  160px 10px 15px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 60px  15px 10px 15px;
   }
 
   &__container {
@@ -25,7 +38,15 @@
   &__subscription {
     margin-bottom: 48px;
 
+    @media (max-width: $desktop) {
+      width: 40%;
+    }
+
     @media (max-width: $table) {
+      width: 35%;
+    }
+
+    @media (max-width: 830px) {
       width: 100%;
     }
   }
@@ -33,13 +54,33 @@
   &__nav {
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: $mobile-xs) {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
   }
 
   &__list {
     padding: 0;
     margin: 0;
     margin-right: 80px;
+    margin-bottom: 50px;
     list-style: none;
+
+    @media (max-width: $desktop) {
+      margin-right: 40px;
+    }
+
+    @media (max-width: 830px) {
+      margin-right: 80px;
+    }
+
+    @media (max-width: $mobile-xs) {
+      margin-right: 20px;
+    }
 
     & li {
       margin-bottom: 20px;
@@ -52,6 +93,25 @@
   }
 
   &__social {
+    & ul {
+      @media (max-width: $mobile-xs) {
+        display: flex;
+        flex-wrap: wrap;
+
+        & li {
+          font-size: 0;
+          
+          &:not(:last-child) {
+            margin-right: 15px;
+          }
+        }
+
+        & svg {
+          height: 21px;
+        }
+      }
+    }
+
     & li {
       margin-bottom: 20px;
     }
