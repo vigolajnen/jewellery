@@ -28,6 +28,7 @@
     position: relative;
     padding-top: 25px;
     box-sizing: border-box;
+
     & label {
       width: 100%;
       box-sizing: border-box;
@@ -36,7 +37,7 @@
     & input {
       width: 100%;
       padding: 10px 105px 10px 0;
-      color: #9B9997;
+      color: #9b9997;
       background-color: transparent;
       border: none;
       border-radius: 0;
@@ -47,7 +48,7 @@
       box-sizing: border-box;
 
       &::placeholder {
-        color: #9B9997;
+        color: #9b9997;
         background-color: transparent;
       }
 
