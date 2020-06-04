@@ -1,0 +1,22 @@
+.pagination {
+  &__link {
+    padding: 0 3px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+
+    text-decoration: none;
+
+    color: #9b9997;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--active {
+      color: $primary-color;
+    }
+  }
+}

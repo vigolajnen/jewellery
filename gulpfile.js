@@ -23,7 +23,7 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([ autoprefixer({ grid: true, browsers: ['last 2 versions', 'ie 11', 'Firefox > 20']  }) ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))

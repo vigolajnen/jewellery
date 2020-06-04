@@ -1,16 +1,47 @@
 .page-header {
   position: relative;
 
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 
-  &__top {
+  &--main {
+    padding-bottom: 100px;
+
+    @media (max-width: $mobile-xs) {
+      padding-bottom: 50px;
+    }
+
+    & .page-header__promo {
+      padding-top: 195px;
+      padding-bottom: 195px;
+      background-image: url("../img/promo/promo-bg.jpg");
+
+      @media (max-width: $table) {
+        background-image: url("../img/promo/promo-bg-table.jpg");
+      }
+
+      @media (max-width: $table) {
+        background-image: url("../img/promo/promo-bg-mob.jpg");
+      }
+    }
+  }
+
+  &__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+  }
 
+  &__top {
+    margin-bottom: 60px;
     padding-top: 40px;
     padding-bottom: 20px;
+
+    border-bottom: 1px solid #f6f5f4;
+
+    @media (max-width: $mobile-xs) {
+      margin-bottom: 0;
+    }
   }
 
   &__nav {
@@ -33,6 +64,10 @@
     color: #9b9997;
 
     text-decoration: none;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
 
     & svg {
       height: 14px;
@@ -68,6 +103,10 @@
       border: none;
       background-color: transparent;
     }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 
   &__cart {
@@ -93,6 +132,20 @@
       border: none;
       background-color: transparent;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 0;
+    }
+
+    & svg {
+      display: none;
+
+      fill: none;
+
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
   }
 
   &__promo {
@@ -101,18 +154,21 @@
     justify-content: center;
     align-items: center;
 
-    padding-top: 195px;
-    padding-bottom: 195px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #6d5644;
-    background-image: url("../img/promo/promo-bg.jpg");
 
-    &--cat {
-      padding-top: 100px;
-      padding-bottom: 100px;
-      background-image: url("../img/promo/promo-cat.jpg");
+    background-image: url("../img/promo/promo-cat.jpg");
+
+    @media (max-width: $table) {
+      background-image: url("../img/promo/promo-cat-table.jpg");
+    }
+
+    @media (max-width: $table) {
+      background-image: url("../img/promo/promo-cat-mob.jpg");
     }
 
     & h1 {
@@ -133,6 +189,11 @@
       color: #ffffff;
 
       text-transform: uppercase;
+
+      @media (max-width: $mobile-xs) {
+        font-size: 38px;
+        line-height: 130%;
+      }
     }
 
     & p {
@@ -149,6 +210,10 @@
       text-align: center;
 
       color: #ffffff;
+
+      @media (max-width: $mobile-xs) {
+        font-size: 34px;
+      }
     }
   }
 }

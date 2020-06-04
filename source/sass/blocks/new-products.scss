@@ -1,13 +1,8 @@
 .new-products {
   position: relative;
-  padding-top: 95px;
   padding-bottom: 70px;
+
   &__header {
-    z-index: 2;
-    position: absolute;
-    top: 95px;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
     margin-bottom: 60px;
 
