@@ -36,7 +36,8 @@
         background-image: url("../img/promo/promo-bg-table.jpg");
       }
 
-      @media (max-width: $table) {
+      @media (max-width: $mobile) {
+        margin-bottom: 0;
         background-image: url("../img/promo/promo-bg-mob.jpg");
       }
     }
@@ -186,7 +187,8 @@
       background-image: url("../img/promo/promo-cat-table.jpg");
     }
 
-    @media (max-width: $table) {
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
       background-image: url("../img/promo/promo-cat-mob.jpg");
     }
 

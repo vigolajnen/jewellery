@@ -42,12 +42,9 @@
     margin-bottom: 110px;
   }
 
-  // & .swiper-container {
-  //   padding-top: 11%;
-  // }
-
   & .swiper-pagination-bullet {
     background-color: transparent;
+    padding: 0 5px;
   }
 
   & .swiper-button-next,
@@ -59,6 +56,10 @@
     background-color: transparent;
 
     outline: none;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
 
     &::after,
     &::before {
@@ -73,8 +74,5 @@
 
   & .swiper-button-prev {
     transform: rotate(180deg);
-  }
-
-  &__slide {
   }
 }

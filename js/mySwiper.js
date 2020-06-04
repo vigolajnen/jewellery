@@ -7,11 +7,14 @@
 
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      type: 'fraction',
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+                ' of ' +
+                '<span class="' + totalClass + '"></span>';
       },
     },
+
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -20,6 +23,15 @@
       640: {
         slidesPerView: 2,
         spaceBetween: 20,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          type: 'bullets',
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+          },
+        },
       },
       1024: {
         slidesPerView: 4,
@@ -34,8 +46,18 @@
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+                ' of ' +
+                '<span class="' + totalClass + '"></span>';
+      },
+    },
   });
+
   var galleryLeft = new Swiper('.product__slider-left', {
     spaceBetween: 14,
     slidesPerView: 3,

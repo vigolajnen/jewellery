@@ -36,6 +36,14 @@
       max-height: 435px;
     }
 
+    & .swiper-pagination {
+      display: none;
+
+      @media (max-width: $mobile-xs) {
+        display: block;
+      }
+    }
+
     &-left {
       width: 100px;
 
@@ -46,6 +54,10 @@
       @media (max-width: $table) {
         width: 100%;
         order: 2;
+      }
+
+      @media (max-width: $mobile-xs) {
+        display: none;
       }
     }
 

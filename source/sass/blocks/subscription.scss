@@ -39,6 +39,7 @@
       color: #9B9997;
       background-color: transparent;
       border: none;
+      border-radius: 0;
       border-bottom: 1px solid #ffffff;
 
       outline: none;
@@ -47,6 +48,16 @@
 
       &::placeholder {
         color: #9B9997;
+        background-color: transparent;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: transparent;
+      }
+
+      &:focus::placeholder,
+      &:hover::placeholder {
         background-color: transparent;
       }
     }
