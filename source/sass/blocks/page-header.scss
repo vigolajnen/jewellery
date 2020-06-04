@@ -3,11 +3,24 @@
 
   padding-bottom: 80px;
 
+  @media (max-width: $table) {
+    padding-bottom: 50px;
+  }
+
   &--main {
     padding-bottom: 100px;
 
     @media (max-width: $mobile-xs) {
       padding-bottom: 50px;
+    }
+
+    & .page-header__top {
+      margin-bottom: 60px;
+      border-bottom: 1px solid #f6f5f4;
+
+      @media (max-width: $mobile-xs) {
+        margin-bottom: 0;
+      }
     }
 
     & .page-header__promo {
@@ -33,15 +46,13 @@
   }
 
   &__top {
-    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
     padding-top: 40px;
     padding-bottom: 20px;
-
-    border-bottom: 1px solid #f6f5f4;
-
-    @media (max-width: $mobile-xs) {
-      margin-bottom: 0;
-    }
   }
 
   &__nav {

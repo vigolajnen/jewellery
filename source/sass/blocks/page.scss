@@ -16,8 +16,6 @@
     overflow: hidden;
   }
 
-
-
   & h2 {
     margin: 0;
     font-family: "Cormorant Garamond", sans-serif;
@@ -28,6 +26,11 @@
     /* or 44px */
 
     color: #1d1613;
+
+    @media (max-width: $table) {
+      font-size: 34px;
+      line-height: 130%;
+    }
 
     @media (max-width: $mobile) {
       font-size: 32px;

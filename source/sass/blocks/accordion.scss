@@ -6,12 +6,19 @@
     border: 1px solid #a87b62;
     box-sizing: border-box;
 
+    @media (max-width: $table) {
+      padding: 50px;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 22px;
+    }
+
     &:not(:last-child) {
       border-bottom: none;
     }
 
     &--active {
-
       & .accordion__text {
         display: block;
       }
@@ -34,10 +41,16 @@
 
     & h3 {
       margin: 0;
+      width: 90%;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       line-height: 130%;
+
+      @media (max-width: $mobile) {
+        font-size: 16px;
+        line-height: 140%;
+      }
     }
 
     & svg {
@@ -57,5 +70,10 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 130%;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      line-height: 140%;
+    }
   }
 }

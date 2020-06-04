@@ -3,6 +3,10 @@
   background-color: #000000;
   color: #ffffff;
 
+  @media (max-width: $table) {
+    padding: 60px 160px 60px 45px;
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -15,12 +19,15 @@
 
     @media (max-width: $mobile) {
       flex-direction: column;
-
     }
   }
 
   &__subscription {
     margin-bottom: 48px;
+
+    @media (max-width: $table) {
+      width: 100%;
+    }
   }
 
   &__nav {
