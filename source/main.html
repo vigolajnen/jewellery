@@ -401,6 +401,38 @@
       </div>
     </footer>
 
+    <div class="popup popup--login">
+      <div class="popup__wrapper">
+        <button class="popup__close" type="button" aria-label="Закрыть окно">
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2>Log In</h2>
+        <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="login-email" aria-label="Your E-mail">
+            <input
+              id="login-email"
+              name="login-email"
+              type="email"
+              placeholder="Your E-mail"
+            />
+          </label>
+          <label for="login-password" aria-label="Password">
+            <input
+              id="login-password"
+              name="login-password"
+              type="password"
+              placeholder="Password"
+            />
+            <a href="#">Forgot your password?</a>
+          </label>
+          <button type="submit">Log In</button>
+          <p>Don’t have an account? <a href="#">Sign up</a></p>
+        </form>
+      </div>
+    </div>
+
     <script src="js/vendor.min.js"></script>
     <script src="js/script.js"></script>
   </body>
