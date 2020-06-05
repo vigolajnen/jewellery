@@ -23,7 +23,7 @@
             <img src="img/logo.svg" alt="Логотип" />
           </a>
           <div class="page-header__login-and-cart">
-            <button class="page-header__login-popup" type="button">
+            <button id="popup-login-btn" class="page-header__login-popup" type="button">
               Login
             </button>
             <button class="page-header__cart" type="button">
@@ -401,7 +401,7 @@
       </div>
     </footer>
 
-    <div id="form-login" class="popup popup--login">
+    <div id="popup-login" class="popup popup--login">
       <div class="popup__wrapper">
         <button class="popup__close" type="button" aria-label="Закрыть окно">
           <svg width="25" height="25">
@@ -416,6 +416,7 @@
               name="login-email"
               type="email"
               placeholder="Your E-mail"
+              required
             />
           </label>
           <label for="login-password" aria-label="Password">
@@ -424,6 +425,7 @@
               name="login-password"
               type="password"
               placeholder="Password"
+              required
             />
             <a href="#">Forgot your password?</a>
           </label>
