@@ -3,6 +3,10 @@
   padding-bottom: 100px;
   overflow: hidden;
 
+  @media (max-width: $mobile) {
+    padding-bottom: 50px;
+  }
+
   &__header {
     margin-bottom: 60px;
     text-align: center;
@@ -44,43 +48,109 @@
 
   &__wrapper {
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 
-    display: grid;
+    flex-direction: column;
+    align-content: space-between;
 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    height: 490px;
 
     box-sizing: border-box;
 
-    overflow: hidden;
+    @media (max-width: $desktop) {
+      height: 275px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: 500px;
+    }
+
+    @media (max-width: $mobile-xs) {
+      max-width: 320px;
+      height: 410px;
+      width: 100%;
+    }
   }
 
   &__item {
+    // min-width: 20%;
+    max-width: 230px;
+    margin-right: 20px;
     margin-bottom: 30px;
     box-sizing: border-box;
 
-    grid-row-start: 1;
-
-    &--bottom {
-      grid-row-start: 2;
-    }
-
-    &--col-one {
-      grid-column-start: 1;
-    }
-
-    &--col-three {
-      grid-column-start: 3;
-    }
-
-    &--col-four {
-      grid-column-start: 4;
-    }
-
     &--big {
-      width: 415px;
+      max-width: 415px;
+      width: 100%;
       grid-row-start: 1;
       grid-row-end: 3;
+
+      & img {
+        height: 100%;
+      }
+    }
+
+    &--last {
+      margin-right: 0;
+
+      & img {
+        margin-left: auto;
+      }
+    }
+
+    @media (max-width: 1300px) {
+      width: 20%;
+
+      &--big {
+        width: 40%;
+      }
+    }
+
+    @media (max-width: $desktop) {
+      max-width: 133px;
+      margin-bottom: 18px;
+
+      &--big {
+        max-width: 231px;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      &--last {
+        display: none;
+      }
+    }
+
+    @media (max-width: $mobile-xs) {
+      width: 50%;
+      max-width: 133px;
+      margin-bottom: 18px;
+      margin-right: 15px;
+
+      &--big {
+        max-width: 145px;
+        height: 236px;
+        margin-right: 0;
+      }
+
+      &--last-mob {
+        max-width: 145px;
+        margin-right: 0;
+      }
+
+      &--horiz {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+      }
+    }
+
+    & img {
+      max-width: 100%;
     }
   }
 }
