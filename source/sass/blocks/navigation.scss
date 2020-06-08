@@ -1,0 +1,51 @@
+.navigation {
+  width: 100%;
+  align-self: flex-start;
+  overflow-y: scroll;
+
+  @media (max-width: 768px) {
+    order: 1;
+    height: 50vh;
+  }
+
+  @media (max-width: $mobile-xs) {
+    height: 45vh;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    list-style: none;
+
+    &--small {
+      margin-bottom: 25px;
+
+      & .navigation__item {
+        margin-bottom: 30px;
+      }
+
+      & .navigation__link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    font-family: "Poppins Medium", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}

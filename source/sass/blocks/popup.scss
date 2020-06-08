@@ -66,6 +66,7 @@
     & button[type="reset"] {
       width: 100%;
       padding: 20px;
+      font-family: "Poppins Medium", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -117,6 +118,15 @@
 
     cursor: pointer;
 
+    outline: none;
+
+    &:focus,
+    &:hover,
+    &:active {
+      outline: none;
+      opacity: 0.5;
+    }
+
     & svg {
       height: 14px;
       fill: $primary-color;
@@ -136,6 +146,7 @@
 
       & a {
         display: block;
+        font-family: "Poppins Medium", sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -159,6 +170,7 @@
     & input {
       width: 100%;
       padding-bottom: 15px;
+      font-family: "Poppins Medium", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -181,6 +193,7 @@
       width: 100%;
       padding: 20px;
       margin-bottom: 30px;
+      font-family: "Poppins Medium", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -194,13 +207,16 @@
       outline: none;
 
       &:focus,
-      &:hover {
+      &:hover,
+      &:active {
+        outline: none;
         opacity: 0.5;
       }
     }
 
     & p {
       margin: 0;
+      font-family: "Poppins Medium", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -214,6 +230,7 @@
     }
 
     & a {
+      font-family: "Poppins Medium", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;

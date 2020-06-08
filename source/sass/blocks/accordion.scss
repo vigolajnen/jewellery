@@ -21,6 +21,7 @@
     &--active {
       & .accordion__text {
         display: block;
+        opacity: 1;
       }
 
       & .accordion__header {
@@ -42,6 +43,7 @@
     & h3 {
       margin: 0;
       width: 90%;
+      font-family: "Poppins Medium", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -59,17 +61,23 @@
       height: 8px;
 
       transform: rotate(180deg);
+      transition: 0.5s;
     }
   }
 
   &__text {
     display: none;
     padding-top: 20px;
+    font-size: 16px;
+    line-height: 130%;
+
+    opacity: 0;
+
     max-width: 527px;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 130%;
+
+    transition: 1s;
 
     @media (max-width: $mobile) {
       font-size: 14px;

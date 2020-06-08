@@ -12,6 +12,37 @@
     };
   }
 
+  var btnMenu = document.querySelector('.page-header__btn-burger');
+  var headerTop = document.querySelector('.page-header__top');
+
+  if (btnMenu) {
+    btnMenu.addEventListener('click', function (evt) {
+      var target = evt.currentTarget;
+      target.parentElement.parentElement.classList.toggle('page-header__top--mob');
+      document.querySelector('.page').classList.add('page--overlay');
+
+      if (document.querySelector('.page').classList.contains('page--overlay')) {
+        document.querySelector('.page').classList.remove('overlay');
+      }
+    });
+  }
+
+  if (window.screen.width > 768) {
+    document.querySelector('.page').classList.remove('page--overlay');
+    if (headerTop.classList.contains('page-header__top--mob')) {
+      headerTop.classList.remove('page-header__top--mob');
+    }
+  }
+
+  window.onresize = function () {
+    if (window.screen.width > 768) {
+      document.querySelector('.page').classList.remove('page--overlay');
+      if (headerTop.classList.contains('page-header__top--mob')) {
+        headerTop.classList.remove('page-header__top--mob');
+      }
+    }
+  };
+
 
   var accordion = document.querySelector('.accordion');
   var accItemActive = document.querySelector('.accordion__item.accordion__item--active');
@@ -19,18 +50,15 @@
   if (accordion) {
     accordion.addEventListener('click', function (evt) {
       evt.preventDefault();
-
       var target = evt.target;
 
       var parent = target.parentElement;
-
       if (parent.className === 'accordion__header') {
         parent.parentElement.classList.toggle('accordion__item--active');
       } else if (parent.className === 'accordion__item' || target.className === 'accordion__item') {
-        parent.classList.toggle('accordion__item--active');
-
+        parent.parentElement.classList.toggle('accordion__item--active');
       } else if (accItemActive) {
-        parent.classList.remove('accordion__item--active');
+        parent.parentElement.classList.remove('accordion__item--active');
       }
     });
   }
@@ -44,7 +72,7 @@
 
   function popupClose(popup, id) {
     var popupbtnClose = popup.querySelector('.popup__close');
-    if (popup.getAttribute('id') === id) { 
+    if (popup.getAttribute('id') === id) {
       document.addEventListener('keydown', function (evt) {
         evt.preventDefault();
         if (evt.keyCode === 27) {
@@ -63,7 +91,7 @@
       popup.addEventListener('click', function (evt) {
         evt.preventDefault();
         var target = evt.target;
-        
+
         if (target.classList.contains('popup--active')) {
           popup.classList.remove('popup--active');
           document.querySelector('.page').classList.remove('page--overlay');
@@ -107,7 +135,6 @@
 
   var forms = document.querySelectorAll('form');
   var inputEmail = document.querySelector('input[type="email"]');
-  var formLogin = document.querySelector('#popup-login form');
 
   var isStorageSupport = true;
   var storageEmail = '';
@@ -117,19 +144,6 @@
   } catch (err) {
     isStorageSupport = false;
   }
-  
-  function checkFieldsPresence(inputs) {
-    for (var i = 0; i < inputs.length; i++) {
-      if (!inputs[i].value) {
-        console.log(inputs[i].value.length);
-        // inputs[i].setCustomValidity('Ошибка: заполните поле');
-      } else {
-        if (isStorageSupport) {
-          localStorage.setItem('inputEmail', inputEmail.value);
-        }
-      }
-    }
-  }
 
   forms.forEach(function (form) {
     var inputs = form.querySelectorAll('input');
@@ -137,8 +151,8 @@
       if (evt.target.tagName === 'BUTTON') {
         for (var i = 0; i < inputs.length; i++) {
           if (!inputs[i].value) {
-            console.log(inputs[i].value.length);
-            // inputs[i].setCustomValidity('Ошибка: заполните поле');
+            // console.log(inputs[i].value.length);
+            inputs[i].setCustomValidity('Ошибка: заполните поле');
           } else {
             if (isStorageSupport) {
               localStorage.setItem('inputEmail', inputEmail.value);
@@ -148,24 +162,17 @@
       }
     });
 
-    form.addEventListener('submit', function (evt) {
-      evt.preventDefault();
-      // валидируем форму;
+    // form.addEventListener('submit', function (evt) {
+    //   evt.preventDefault();
+    //   // валидируем форму;
 
-      for (var i = 0; i < inputs.length; i++) {
-        if (!inputs[i].value) {
-          console.log(inputs[i].value.length);
-          // inputs[i].setCustomValidity('Ошибка: заполните поле');
-        } else {
-          if (isStorageSupport) {
-            localStorage.setItem('inputEmail', inputEmail.value);
-            form.submit();
-          }
-        }
-      }
+    //   if (isStorageSupport) {
+    //     localStorage.setItem('inputEmail', inputEmail.value);
+    //     form.submit();
+    //   }
 
-      return false; // предотвращаем отправку формы и перезагрузку страницы
-    });
+    //   return false; // предотвращаем отправку формы и перезагрузку страницы
+    // });
   });
 
 })();

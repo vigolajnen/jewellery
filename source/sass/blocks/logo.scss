@@ -11,4 +11,8 @@
     height: auto;
     object-fit: cover;
   }
+
+  & svg {
+    fill: #a87b62;
+  }
 }

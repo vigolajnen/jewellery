@@ -36,6 +36,7 @@
       & a {
         width: calc(50% - 15px);
         padding: 20px;
+        font-family: "Poppins Medium", sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -100,6 +101,7 @@
   }
 
   &__total {
+    font-family: "Poppins Medium", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
