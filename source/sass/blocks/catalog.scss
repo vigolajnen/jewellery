@@ -59,6 +59,7 @@
   }
 
   &__form {
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -67,12 +68,14 @@
     }
 
     & label {
+      position: relative;
       width: 100%;
       display: block;
       margin-bottom: 15px;
     }
 
     & input {
+      position: relative;
       cursor: pointer;
     }
 

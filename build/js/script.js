@@ -44,21 +44,22 @@
   };
 
 
-  var accordion = document.querySelector('.accordion');
-  var accItemActive = document.querySelector('.accordion__item.accordion__item--active');
+  var acc = document.getElementsByClassName("accordion");
+  var i;
 
-  if (accordion) {
-    accordion.addEventListener('click', function (evt) {
-      evt.preventDefault();
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function (evt) {
       var target = evt.target;
-
       var parent = target.parentElement;
+      
       if (parent.className === 'accordion__header') {
         parent.parentElement.classList.toggle('accordion__item--active');
-      } else if (parent.className === 'accordion__item' || target.className === 'accordion__item') {
+      } else if (target.tagName === 'SVG') {
         parent.parentElement.classList.toggle('accordion__item--active');
-      } else if (accItemActive) {
-        parent.parentElement.classList.remove('accordion__item--active');
+      } else if (target.tagName === 'use') {
+        parent.parentElement.parentElement.classList.toggle('accordion__item--active');
+      }else {
+        target.classList.toggle("accordion__item--active");
       }
     });
   }
