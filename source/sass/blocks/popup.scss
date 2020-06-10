@@ -33,11 +33,38 @@
   }
 
   &--filter {
+    background-color: #ffffff;
+
     & .popup__wrapper {
+      padding: 15px;
+      background-color: #ffffff;
+      box-shadow: none;
+    }
+
+    & .popup__inner {
       max-width: 442px;
       padding: 40px;
       background-color: #ffffff;
       box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
+
+      overflow-y: auto;
+    }
+
+    & .popup__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 32px;
+      height: 32px;
+      background-color: #1d1613;
+      border-radius: 50%;
+
+      & svg {
+        width: 15px;
+        height: 15px;
+        padding: 7px 0;
+        fill: #ffffff;
+      }
     }
 
     & form {

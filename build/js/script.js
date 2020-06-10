@@ -44,22 +44,22 @@
   };
 
 
-  var acc = document.getElementsByClassName("accordion");
+  var acc = document.getElementsByClassName('accordion');
   var i;
 
   for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function (evt) {
+    acc[i].addEventListener('click', function (evt) {
       var target = evt.target;
       var parent = target.parentElement;
-      
+
       if (parent.className === 'accordion__header') {
         parent.parentElement.classList.toggle('accordion__item--active');
       } else if (target.tagName === 'SVG') {
         parent.parentElement.classList.toggle('accordion__item--active');
       } else if (target.tagName === 'use') {
         parent.parentElement.parentElement.classList.toggle('accordion__item--active');
-      }else {
-        target.classList.toggle("accordion__item--active");
+      } else {
+        target.classList.toggle('accordion__item--active');
       }
     });
   }
@@ -150,10 +150,10 @@
     var inputs = form.querySelectorAll('input');
     form.addEventListener('click', function (evt) {
       if (evt.target.tagName === 'BUTTON') {
-        for (var i = 0; i < inputs.length; i++) {
-          if (!inputs[i].value) {
-            // console.log(inputs[i].value.length);
-            inputs[i].setCustomValidity('Ошибка: заполните поле');
+        for (var j = 0; j < inputs.length; j++) {
+          if (!inputs[j].value) {
+            // console.log(inputs[j].value.length);
+            inputs[j].setCustomValidity('Ошибка: заполните поле');
           } else {
             if (isStorageSupport) {
               localStorage.setItem('inputEmail', inputEmail.value);
@@ -163,17 +163,17 @@
       }
     });
 
-    // form.addEventListener('submit', function (evt) {
-    //   evt.preventDefault();
-    //   // валидируем форму;
+    form.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+      // валидируем форму;
 
-    //   if (isStorageSupport) {
-    //     localStorage.setItem('inputEmail', inputEmail.value);
-    //     form.submit();
-    //   }
+      if (isStorageSupport) {
+        localStorage.setItem('inputEmail', inputEmail.value);
+        form.submit();
+      }
 
-    //   return false; // предотвращаем отправку формы и перезагрузку страницы
-    // });
+      return false; // предотвращаем отправку формы и перезагрузку страницы
+    });
   });
 
 })();

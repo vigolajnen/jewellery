@@ -68,13 +68,11 @@
   }
 
   &__text {
-    
     font-size: 16px;
     line-height: 130%;
 
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
 
     opacity: 0;
 
@@ -82,7 +80,7 @@
     font-style: normal;
     font-weight: normal;
 
-    transition: 1s;
+    transition: max-height 0.2s ease-out;
 
     @media (max-width: $mobile) {
       font-size: 14px;
