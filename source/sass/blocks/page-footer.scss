@@ -1,6 +1,5 @@
 .page-footer {
-  padding: 100px;
-  padding-bottom: 50px;
+  padding: 90px 95px 50px;
   background-color: #000000;
   color: #ffffff;
 
@@ -36,6 +35,7 @@
   }
 
   &__subscription {
+    width: 43%;
     margin-bottom: 48px;
 
     @media (max-width: $desktop) {
@@ -52,8 +52,12 @@
   }
 
   &__nav {
+    width: 50%;
+    padding-top: 10px;
+    padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 
     @media (max-width: $mobile-xs) {
       width: 100%;
@@ -66,7 +70,7 @@
   &__list {
     padding: 0;
     margin: 0;
-    margin-right: 80px;
+    margin-right: 90px;
     margin-bottom: 50px;
     list-style: none;
 

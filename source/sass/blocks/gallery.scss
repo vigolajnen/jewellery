@@ -1,6 +1,6 @@
 .gallery {
-  padding-top: 30px;
-  padding-bottom: 100px;
+  padding-top: 17px;
+  padding-bottom: 55px;
   overflow: hidden;
 
   @media (max-width: $mobile) {
@@ -8,15 +8,18 @@
   }
 
   &__header {
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     text-align: center;
 
     & h2 {
       margin: 0;
+      margin-bottom: 21px;
+      letter-spacing: 0.03em;
     }
 
     & a {
       position: relative;
+      padding-bottom: 5px;
       font-family: "Poppins Medium", sans-serif;
       font-style: normal;
       font-weight: 500;

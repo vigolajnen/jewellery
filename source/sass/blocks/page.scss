@@ -16,6 +16,16 @@
     overflow: hidden;
   }
 
+  &--item {
+    & .page-header {
+      padding-bottom: 70px;
+    }
+
+    & .slider-products {
+      padding-bottom: 113px;
+    }
+  }
+
   & h2 {
     margin: 0;
     font-family: "Cormorant Garamond", sans-serif;

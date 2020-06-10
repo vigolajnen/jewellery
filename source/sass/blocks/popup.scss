@@ -192,6 +192,18 @@
           opacity: 0.5;
         }
       }
+
+      &.error {
+        & input {
+          border-bottom: 1px solid red;
+        }
+
+        & div {
+          color: red;
+          text-align: left;
+          font-size: 13px;
+        }
+      }
     }
 
     & input {
@@ -214,6 +226,10 @@
 
       outline: none;
       box-sizing: border-box;
+
+      &:valid {
+        border-bottom: 1px solid green;
+      }
     }
 
     & button[type="submit"] {

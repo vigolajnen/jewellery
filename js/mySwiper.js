@@ -35,7 +35,7 @@
       },
       1024: {
         slidesPerView: 4,
-        spaceBetween: 40,
+        spaceBetween: 30,
       },
     }
   });

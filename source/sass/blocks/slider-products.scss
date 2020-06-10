@@ -1,5 +1,6 @@
 .slider-products {
   position: relative;
+  padding-top: 20px;
   padding-bottom: 70px;
 
   &__header {
@@ -8,6 +9,7 @@
 
     & h2 {
       margin: 0;
+      margin-bottom: 24px;
     }
 
     & a {
@@ -42,7 +44,7 @@
   }
 
   &__wrapper {
-    margin-bottom: 110px;
+    margin-bottom: 83px;
   }
 
   & .swiper-pagination-bullet {
@@ -52,7 +54,7 @@
 
   & .swiper-button-next,
   & .swiper-button-prev {
-    top: 24px;
+    top: 49px;
     width: 45px;
     border: none;
     border-radius: 0;
@@ -76,6 +78,11 @@
   }
 
   & .swiper-button-prev {
+    left: -8px;
     transform: rotate(180deg);
+  }
+
+  & .swiper-button-next {
+    right: -8px;
   }
 }

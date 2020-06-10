@@ -1,5 +1,5 @@
 .price-slider {
-  margin: 0 0 50px 0;
+  margin: 6px 0 30px 0;
   padding: 0 25px 0 15px;
 
   height: 2px;
@@ -24,7 +24,7 @@
   }
 
   &.noUi-horizontal .noUi-tooltip {
-    bottom: -100%;
+    bottom: -50%;
   }
 
   & .noUi-handle::after,
@@ -37,6 +37,11 @@
     padding: 0;
     border: none;
     border-radius: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
 
     &::before {
       content: "$ ";
