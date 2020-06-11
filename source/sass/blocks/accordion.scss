@@ -3,6 +3,13 @@
     position: relative;
     padding: 42px 42px 45px;
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
     border: 1px solid #a87b62;
     box-sizing: border-box;
 
@@ -17,31 +24,6 @@
     &:not(:last-child) {
       border-bottom: none;
     }
-
-    &--active {
-      & .accordion__text {
-        position: relative;
-        padding-top: 10px;
-        padding-left: 6px;
-        max-height: 300px;
-        opacity: 1;
-      }
-
-      & .accordion__header {
-        & svg {
-          transform: rotate(0deg);
-        }
-      }
-    }
-  }
-
-  &__header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    cursor: pointer;
 
     & h3 {
       margin: 0;
@@ -67,9 +49,24 @@
       transform: rotate(180deg);
       transition: 0.5s;
     }
+
+    &--active {
+      & .accordion__text {
+        position: relative;
+        padding-top: 10px;
+        padding-left: 6px;
+        max-height: 300px;
+        opacity: 1;
+      }
+
+      & svg {
+        transform: rotate(0deg);
+      }
+    }
   }
 
   &__text {
+    width: 100%;
     font-size: 16px;
     line-height: 130%;
 

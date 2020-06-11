@@ -50,14 +50,18 @@
     acc[i].addEventListener('click', function (evt) {
       var target = evt.target;
       var parent = target.parentElement;
-      // console.log(target);
-      // console.log(target.previousElementSibling);
-      if (parent.className === 'accordion__header') {
+      // console.log(target.tagName);
+      // console.log(parent);
+      if (target.tagName === 'use') {
         parent.parentElement.classList.toggle('accordion__item--active');
-      } else if (target.tagName === 'SVG') {
-        parent.parentElement.classList.toggle('accordion__item--active');
-      } else if (target.tagName === 'use') {
-        parent.parentElement.parentElement.classList.toggle('accordion__item--active');
+      } else if (target.tagName === 'accordion__item') {
+        target.classList.toggle('accordion__item--active');
+      } else if (target.className === 'accordion__item accordion__item--active') {
+        target.classList.toggle('accordion__item--active');
+      } else if (target.tagName === 'H3') {
+        parent.classList.toggle('accordion__item--active');
+      } else if (target.tagName === 'svg') {
+        parent.classList.toggle('accordion__item--active');
       }
     });
   }
