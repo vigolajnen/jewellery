@@ -88,6 +88,11 @@
       margin-right: 0;
     }
 
+    &--bold {
+      font-family: "Poppins Bold", sans-serif;
+      font-weight: bold;
+    }
+
     @media (max-width: $desktop) {
       margin-right: 40px;
     }
@@ -105,8 +110,17 @@
     }
 
     & a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
       color: #ffffff;
       text-decoration: none;
+
+      &:focus,
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 

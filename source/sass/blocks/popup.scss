@@ -230,6 +230,11 @@
       &:valid {
         border-bottom: 1px solid green;
       }
+
+      &:focus,
+      &:hover {
+        color: $primary-color;
+      }
     }
 
     & button[type="submit"] {

@@ -169,6 +169,7 @@
       border-radius: 0;
       border: none;
       background-color: transparent;
+      opacity: 0.5;
     }
 
     @media (max-width: 768px) {
@@ -199,10 +200,13 @@
     cursor: pointer;
 
     &:focus,
-    &:hover {
+    &:hover,
+    &:active {
+      outline: none;
       border-radius: 0;
       border: none;
       background-color: transparent;
+      opacity: 0.5;
     }
 
     @media (max-width: 768px) {

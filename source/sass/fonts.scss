@@ -12,6 +12,15 @@
   font-display: auto;
   src: url("../fonts/Poppinspoppins-semiboldmedium.woff") format("woff2"),
     url("../fonts/Poppinspoppins-semiboldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  font-display: auto;
+  src: url("../fonts/Poppinsbold.woff") format("woff2"),
+    url("../fonts/Poppinsbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
