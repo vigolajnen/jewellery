@@ -12,6 +12,8 @@
 
   background-image: url("../img/promo/promo-cat.jpg");
 
+  box-sizing: border-box;
+
   @media (max-width: $table) {
     background-image: url("../img/promo/promo-cat-table.jpg");
   }
@@ -22,6 +24,7 @@
   }
 
   & h1 {
+    max-width: 100%;
     margin: 0;
     font-family: $titleFont;
 
@@ -33,6 +36,7 @@
     color: #ffffff;
 
     text-transform: uppercase;
+    box-sizing: border-box;
 
     @media (max-width: $mobile-xs) {
       font-size: 34px;
@@ -40,6 +44,7 @@
   }
 
   & p {
+    max-width: 100%;
     margin: 0;
     font-family: $titleFontItalic;
     font-style: italic;
@@ -48,6 +53,7 @@
     line-height: 130%;
 
     color: #ffffff;
+    box-sizing: border-box;
 
     @media (max-width: $mobile-xs) {
       font-size: 22px;
@@ -72,11 +78,13 @@
     }
 
     & h1 {
+      max-width: 100%;
       font-size: 45px;
       line-height: 130%;
       letter-spacing: 0.03em;
 
       color: #ffffff;
+      text-align: center;
 
       @media (max-width: $mobile-xs) {
         font-size: 38px;
@@ -85,6 +93,7 @@
     }
 
     & p {
+      max-width: 100%;
       font-size: 38px;
       line-height: 130%;
 
