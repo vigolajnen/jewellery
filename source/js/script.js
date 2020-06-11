@@ -154,27 +154,11 @@
 
   var formLogin = document.querySelector('#popup-login form');
 
-
   function generateError(text) {
     var error = document.createElement('div');
     error.className = 'error__text';
     error.innerText = text;
     return error;
-  }
-
-  function checkFieldsPresence(inputs) {
-    for (var j = 0; j < inputs.length; j++) {
-      if (!inputs[j].value && !inputPass.value) {
-        inputs[j].parentElement.classList.add('error');
-        var error = generateError('Ошибка: заполните поле');
-        inputs[j].parentElement.appendChild(error, inputs[j]);
-      } else {
-
-        if (isStorageSupport) {
-          localStorage.setItem('inputEmail', inputEmail.value);
-        }
-      }
-    }
   }
 
   function removeValidation(form) {
@@ -186,23 +170,24 @@
     }
   }
 
-  formLogin.addEventListener('click', function (evt) {
-    var inputs = formLogin.querySelectorAll('input');
-    if (evt.target.tagName === 'BUTTON') {
-      removeValidation(formLogin);
-      checkFieldsPresence(inputs);
-    }
-  });
 
-  formLogin.addEventListener('submit', function (evt) {
+  formLogin.addEventListener('click', function (evt) {
     evt.preventDefault();
     var inputs = formLogin.querySelectorAll('input');
-    // валидируем форму;
-
     removeValidation(formLogin);
-    checkFieldsPresence(inputs);
 
+    for (var j = 0; j < inputs.length; j++) {
+      if (!inputs[j].value && !inputPass.value) {
+        inputs[j].parentElement.classList.add('error');
+        var error = generateError('Ошибка: заполните поле');
+        inputs[j].parentElement.appendChild(error, inputs[j]);
+      } else {
+
+        if (isStorageSupport) {
+          localStorage.setItem('inputEmail', inputEmail.value);
+          formLogin.submit();
+        }
+      }
+    }
   });
-
-
 })();

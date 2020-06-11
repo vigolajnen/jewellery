@@ -194,11 +194,16 @@
       }
 
       &.error {
+        position: relative;
+
         & input {
           border-bottom: 1px solid red;
         }
 
         & div {
+          position: absolute;
+          top: -20px;
+          left: 0;
           color: red;
           text-align: left;
           font-size: 13px;

@@ -129,6 +129,8 @@ gulp.task('scripts', function() {
     './js/nouislider.js',
     './js/wNumb.js',
     './js/myUiSlider.js',
+    './js/masonry.pkgd.js',
+    './js/myGallery.js',
   ])
     .pipe(concat('vendor.min.js'))
     .pipe(gulp.dest('build/js'));
