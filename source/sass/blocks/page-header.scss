@@ -1,79 +1,26 @@
 .page-header {
   position: relative;
+  border-bottom: 1px solid #f6f5f4;
 
-  padding-bottom: 80px;
+  &--mob {
+    background-color: #a87b62;
 
-  @media (max-width: $table) {
-    padding-bottom: 50px;
-  }
-
-  @media (max-width: $mobile) {
-    padding-bottom: 0;
-  }
-
-  &--main {
-    padding-bottom: 100px;
-
-    @media (max-width: $mobile-xs) {
-      padding-bottom: 50px;
+    & .page-header__navigation,
+    & .page-header__search,
+    & .page-header__login-popup {
+      display: block;
     }
 
-    & .page-header__top {
-      padding-top: 42px;
-      padding-bottom: 12px;
-      margin-bottom: 60px;
-      border-bottom: 1px solid #f6f5f4;
-
-      @media (max-width: $mobile-xs) {
-        margin-bottom: 0;
-      }
+    & .page-header__logo svg {
+      fill: #ffffff;
     }
 
-    & .page-header__search {
-      padding-top: 10px;
+    & .page-header__cart svg {
+      stroke: #ffffff;
     }
 
-    & .page-header__login-and-cart {
-      padding-top: 10px;
-    }
-
-    & .page-header__promo {
-      padding-top: 180px;
-      padding-bottom: 177px;
-      background-image: url("../img/promo/promo-bg.jpg");
-
-      @media (max-width: $table) {
-        background-image: url("../img/promo/promo-bg-table.jpg");
-      }
-
-      @media (max-width: $mobile) {
-        margin-bottom: 0;
-        background-image: url("../img/promo/promo-bg-mob.jpg");
-      }
-
-      & h1 {
-        font-size: 45px;
-        line-height: 130%;
-        letter-spacing: 0.03em;
-
-        color: #ffffff;
-
-        @media (max-width: $mobile-xs) {
-          font-size: 38px;
-          line-height: 130%;
-        }
-      }
-
-      & p {
-        font-size: 38px;
-        line-height: 130%;
-
-        color: #ffffff;
-
-        @media (max-width: $mobile-xs) {
-          font-size: 34px;
-        }
-      }
+    & .page-header__btn-burger svg {
+      stroke: #ffffff;
     }
   }
 
@@ -83,45 +30,12 @@
     justify-content: space-between;
     align-items: flex-start;
 
+    padding-top: 40px;
+    padding-bottom: 12px;
+
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
-    }
-  }
-
-  &__top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    padding-top: 30px;
-    padding-bottom: 24px;
-
-    @media (max-width: $mobile-xs) {
-      padding-top: 20px;
-    }
-
-    &--mob {
-      background-color: #a87b62;
-
-      & .page-header__navigation,
-      & .page-header__search,
-      & .page-header__login-popup {
-        display: block;
-      }
-
-      & .page-header__logo svg {
-        fill: #ffffff;
-      }
-
-      & .page-header__cart svg {
-        stroke: #ffffff;
-      }
-
-      & .page-header__btn-burger svg {
-        stroke: #ffffff;
-      }
     }
   }
 
@@ -130,15 +44,6 @@
 
     @media (max-width: 768px) {
       padding-right: 0;
-    }
-  }
-
-  &__nav {
-    border-top: 1px solid #f6f5f4;
-    border-bottom: 1px solid #f6f5f4;
-
-    @media (max-width: $mobile) {
-      display: none;
     }
   }
 
@@ -152,7 +57,7 @@
     flex-wrap: wrap;
     align-items: center;
 
-    padding-top: 22px;
+    padding-top: 12px;
 
     box-sizing: border-box;
 
@@ -229,7 +134,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 22px;
+    padding-top: 12px;
 
     @media (max-width: 768px) {
       order: 2;
@@ -324,65 +229,6 @@
 
       @media (max-width: 768px) {
         display: block;
-      }
-    }
-  }
-
-  &__promo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding-top: 93px;
-    padding-bottom: 95px;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #6d5644;
-
-    background-image: url("../img/promo/promo-cat.jpg");
-
-    @media (max-width: $table) {
-      background-image: url("../img/promo/promo-cat-table.jpg");
-    }
-
-    @media (max-width: $mobile) {
-      margin-bottom: 40px;
-      background-image: url("../img/promo/promo-cat-mob.jpg");
-    }
-
-    & h1 {
-      margin: 0;
-      font-family: $titleFont;
-
-      font-style: normal;
-      font-weight: bold;
-      font-size: 34px;
-      line-height: 130%;
-
-      color: #ffffff;
-
-      text-transform: uppercase;
-
-      @media (max-width: $mobile-xs) {
-        font-size: 38px;
-        line-height: 130%;
-      }
-    }
-
-    & p {
-      margin: 0;
-      font-family: $titleFontItalic;
-      font-style: italic;
-      font-weight: 500;
-      font-size: 22px;
-      line-height: 130%;
-
-      color: #ffffff;
-
-      @media (max-width: $mobile-xs) {
-        font-size: 34px;
       }
     }
   }

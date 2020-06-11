@@ -2,7 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 70px;
   box-sizing: border-box;
+
+  @media (max-width: $table) {
+    padding-top: 40px;
+  }
 
   &__sidebar {
     width: 100%;
@@ -212,6 +217,10 @@
 
     &:nth-child(3n) {
       margin-right: 0;
+    }
+
+    @media (max-width: 1353px) {
+      width: 30%;
     }
 
     @media (max-width: $mobile) {

@@ -1,6 +1,6 @@
 .gallery {
-  padding-top: 17px;
-  padding-bottom: 55px;
+  padding-top: 58px;
+  padding-bottom: 53px;
   text-align: center;
   overflow: hidden;
 
@@ -60,7 +60,7 @@
     box-sizing: border-box;
 
     @media (max-width: $desktop) {
-      height: 275px;
+      height: 351px;
       max-width: 700px;
       margin: 0 auto;
     }
@@ -71,7 +71,7 @@
 
     @media (max-width: $mobile-xs) {
       max-width: 320px;
-      height: 410px;
+      height: 486px;
       width: 100%;
     }
   }
