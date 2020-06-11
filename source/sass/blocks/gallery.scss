@@ -1,56 +1,53 @@
 .gallery {
   padding-top: 17px;
   padding-bottom: 55px;
+  text-align: center;
   overflow: hidden;
 
   @media (max-width: $mobile) {
     padding-bottom: 50px;
   }
 
-  &__header {
-    margin-bottom: 65px;
+  & h2 {
+    margin: 0;
+    margin-bottom: 21px;
+    letter-spacing: 0.03em;
+  }
+
+  & a {
+    position: relative;
+    padding-bottom: 5px;
+    font-family: "Poppins Medium", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
     text-align: center;
 
-    & h2 {
-      margin: 0;
-      margin-bottom: 21px;
-      letter-spacing: 0.03em;
+    color: #1d1613;
+
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
     }
 
-    & a {
-      position: relative;
-      padding-bottom: 5px;
-      font-family: "Poppins Medium", sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 130%;
-      /* or 21px */
-      text-align: center;
-
-      color: #1d1613;
-
-      text-decoration: none;
-
-      &:focus,
-      &:hover {
-        opacity: 0.5;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background-color: #a87b62;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #a87b62;
     }
   }
 
   &__wrapper {
     position: relative;
+    padding-top: 65px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -58,7 +55,7 @@
     flex-direction: column;
     align-content: space-between;
 
-    height: 490px;
+    height: 555px;
 
     box-sizing: border-box;
 

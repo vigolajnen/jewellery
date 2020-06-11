@@ -29,8 +29,13 @@
 
     width: 100%;
 
+    @media (max-width: 768px) {
+      padding-right: 125px;
+    }
+
     @media (max-width: $mobile) {
       flex-direction: column;
+      padding-right: 0;
     }
   }
 
@@ -58,6 +63,11 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0;
+    }
 
     @media (max-width: $mobile-xs) {
       width: 100%;
