@@ -1,9 +1,11 @@
 .logo {
   display: block;
-  max-width: 137px;
+  width: 66px;
+  height: 66px;
 
   @media (max-width: $mobile) {
-    max-width: 120px;
+    width: 52px;
+    height: 52px;
   }
 
   & img {
@@ -13,6 +15,13 @@
   }
 
   & svg {
+    width: 66px;
+    height: 66px;
     fill: #a87b62;
+
+    @media (max-width: $mobile) {
+      width: 52px;
+      height: 52px;
+    }
   }
 }

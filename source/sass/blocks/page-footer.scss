@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 70px 95px 50px;
+  padding: 70px 95px 30px;
   background-color: #000000;
   color: #ffffff;
 
@@ -58,8 +58,8 @@
 
   &__nav {
     width: 50%;
-    padding-top: 25px;
-    padding-left: 10px;
+    padding-top: 30px;
+    padding-left: 15px;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -80,7 +80,7 @@
   &__list {
     padding: 0;
     margin: 0;
-    margin-right: 90px;
+    margin-right: 85px;
     margin-bottom: 50px;
     list-style: none;
 
@@ -93,12 +93,12 @@
       font-weight: bold;
     }
 
-    @media (max-width: $desktop) {
+    @media (max-width: 1360px) {
       margin-right: 40px;
     }
 
     @media (max-width: 830px) {
-      margin-right: 80px;
+      margin-right: 70px;
     }
 
     @media (max-width: $mobile-xs) {

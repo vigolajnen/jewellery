@@ -1,16 +1,16 @@
 .navigation {
   width: 100%;
   align-self: flex-start;
-  overflow-y: scroll;
+  
 
   @media (max-width: 768px) {
     order: 1;
-    height: 50vh;
+    // height: 50vh;
   }
 
-  @media (max-width: $mobile-xs) {
-    height: 45vh;
-  }
+  // @media (max-width: $mobile-xs) {
+  //   height: 45vh;
+  // }
 
   &__list {
     padding: 0;

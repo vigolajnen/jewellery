@@ -170,11 +170,26 @@
     }
   }
 
+  function validate(email, form) {
+   var email = form.querySelector('input[type$="email"]');
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (reg.test(email) == false) 
+    {
+
+      email.parentElement.classList.add('error');
+        var error = generateError('Ошибка: заполните поле');
+        email.parentElement.appendChild(error, email);
+      return (false);
+    }
+  };
+
 
   formLogin.addEventListener('click', function (evt) {
     evt.preventDefault();
     var inputs = formLogin.querySelectorAll('input');
+    var email = formLogin.querySelector('input[type$="email"]');
     removeValidation(formLogin);
+    validate(email, formLogin);
 
     for (var j = 0; j < inputs.length; j++) {
       if (!inputs[j].value && !inputPass.value) {
@@ -185,9 +200,19 @@
 
         if (isStorageSupport) {
           localStorage.setItem('inputEmail', inputEmail.value);
-          formLogin.submit();
         }
       }
     }
   });
+
+  formLogin.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+    var inputs = formLogin.querySelectorAll('input');
+    
+    removeValidation(formLogin);
+    
+
+    formLogin.submit();
+  });
+
 })();

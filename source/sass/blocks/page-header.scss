@@ -4,6 +4,8 @@
 
   &--mob {
     background-color: #a87b62;
+    overflow-y: scroll;
+    height: 100vh;
 
     & .page-header__navigation,
     & .page-header__search,
@@ -31,11 +33,13 @@
     align-items: flex-start;
 
     padding-top: 40px;
-    padding-bottom: 12px;
+    padding-bottom: 17px;
 
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
+      padding-top: 24px;
+      padding-bottom: 12px;
     }
   }
 
