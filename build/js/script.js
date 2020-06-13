@@ -11,19 +11,14 @@
       }
     };
   }
-
+  var page = document.querySelector('.page');
   var btnMenu = document.querySelector('.page-header__btn-burger');
   var headerTop = document.querySelector('.page-header');
 
   if (btnMenu) {
-    btnMenu.addEventListener('click', function (evt) {
-      var target = evt.currentTarget;
-      target.parentElement.parentElement.classList.toggle('page-header--mob');
-      document.querySelector('.page').classList.add('page--overlay');
-
-      if (document.querySelector('.page').classList.contains('page--overlay')) {
-        document.querySelector('.page').classList.remove('overlay');
-      }
+    btnMenu.addEventListener('click', function () {
+      headerTop.classList.toggle('page-header--mob');
+      page.classList.toggle('page--overlay');
     });
   }
 
@@ -50,8 +45,6 @@
     acc[i].addEventListener('click', function (evt) {
       var target = evt.target;
       var parent = target.parentElement;
-      // console.log(target.tagName);
-      // console.log(parent);
       if (target.tagName === 'use') {
         parent.parentElement.classList.toggle('accordion__item--active');
       } else if (target.tagName === 'accordion__item') {
@@ -66,7 +59,6 @@
     });
   }
 
-  var page = document.querySelector('.page');
   // Login
   var btnLogin = document.querySelector('#popup-login-btn');
   var popupLogin = document.querySelector('#popup-login');
@@ -137,6 +129,7 @@
       if (popupLogin.classList.contains('popup--active')) {
         popupLogin.classList.remove('popup--active');
       }
+      page.classList.remove('page--overlay');
     }
   });
 
@@ -145,8 +138,8 @@
 
     if (target.className === 'popup popup--login popup--active') {
       popupLogin.classList.remove('popup--active');
-      page.classList.remove('page--overlay');
     }
+    page.classList.remove('page--overlay');
   });
 
   if (btnFilter) {
@@ -168,6 +161,7 @@
         if (popupFilter.classList.contains('popup--active')) {
           popupFilter.classList.remove('popup--active');
         }
+        page.classList.remove('page--overlay');
       }
     });
 
@@ -176,8 +170,8 @@
 
       if (target.className === 'popup popup--filter popup--active') {
         popupFilter.classList.remove('popup--active');
-        page.classList.remove('page--overlay');
       }
+      page.classList.remove('page--overlay');
     });
   }
 
@@ -200,6 +194,7 @@
         if (popupAddCart.classList.contains('popup--active')) {
           popupAddCart.classList.remove('popup--active');
         }
+        page.classList.remove('page--overlay');
       }
     });
 
@@ -208,8 +203,8 @@
 
       if (target.className === 'popup popup--add-cart popup--active') {
         popupAddCart.classList.remove('popup--active');
-        page.classList.remove('page--overlay');
       }
+      page.classList.remove('page--overlay');
     });
   }
 })();

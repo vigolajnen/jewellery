@@ -41,5 +41,10 @@
     line-height: 36px;
     color: #ffffff;
     text-decoration: none;
+
+    &:focus,
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

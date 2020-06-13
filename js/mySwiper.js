@@ -2,6 +2,7 @@
 
   var mySwiper = new Swiper('#new-products', {
     slidesPerView: 2,
+    slidesPerGroup: 2,
     grabCursor: true,
     spaceBetween: 15,
 
@@ -21,6 +22,7 @@
     breakpoints: {
       300: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 20,
 
         pagination: {
@@ -35,6 +37,7 @@
       },
       640: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 20,
 
         pagination: {
@@ -48,6 +51,7 @@
       },
       1024: {
         slidesPerView: 4,
+        slidesPerGroup: 4,
         spaceBetween: 30,
       },
     }

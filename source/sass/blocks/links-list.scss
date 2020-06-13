@@ -31,7 +31,8 @@
 
     color: $primary-color;
 
-    &:focus &:hover {
+    &:focus,
+    &:hover {
       opacity: 0.5;
     }
   }
