@@ -7,11 +7,10 @@
 
     pagination: {
       el: '.swiper-pagination',
-      type: 'fraction',
-      renderFraction: function (currentClass, totalClass) {
-        return '<span class="' + currentClass + '"></span>' +
-                ' of ' +
-                '<span class="' + totalClass + '"></span>';
+      clickable: true,
+      type: 'bullets',
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
       },
     },
 
@@ -20,6 +19,20 @@
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
+      300: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+          renderFraction: function (currentClass, totalClass) {
+            return '<span class="' + currentClass + '"></span>' +
+                    ' of ' +
+                    '<span class="' + totalClass + '"></span>';
+          },
+        },
+      },
       640: {
         slidesPerView: 2,
         spaceBetween: 20,

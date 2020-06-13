@@ -1,4 +1,5 @@
-
+var gallery = document.querySelector('.gallery');
+if (gallery) {
   var msnry = new Masonry( '.gallery__wrapper', {
     // options
     itemSelector: '.gallery__item',
@@ -6,3 +7,4 @@
     gutter: '.gallery__gutter-sizer',
     percentPosition: true
   });
+}
