@@ -3,9 +3,21 @@
   padding-bottom: 45px;
   text-align: center;
 
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-xs) {
+    padding-top: 26px;
+  }
+
   & h2 {
     margin: 0;
     margin-bottom: 20px;
+
+    @media (max-width: $mobile-xs) {
+      margin-bottom: 24px;
+    }
   }
 
   & a {
@@ -51,6 +63,10 @@
       column-count: 1;
       column-gap: 0;
     }
+
+    @media (max-width: $mobile-xs) {
+      padding-top: 55px;
+    }
   }
 
   &__item {
@@ -68,6 +84,14 @@
     @media (max-width: $table) {
       width: 100%;
       margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $mobile-xs) {
+      margin-bottom: 41px;
     }
 
     &--one {
@@ -165,8 +189,13 @@
           padding: 62px;
         }
 
+        @media (max-width: 768px) {
+          padding: 81px 62px 92px;
+        }
+
         @media (max-width: $mobile-xs) {
           margin-top: 256px;
+          padding: 62px 62px 70px;
         }
       }
     }
@@ -188,10 +217,14 @@
       height: 100%;
     }
 
+    @media (max-width: 768px) {
+      padding: 68px 71px;
+    }
+
     @media (max-width: $mobile-xs) {
       order: 2;
       width: 100%;
-      padding: 49px;
+      padding: 45px 45px 52px;
     }
 
     & h3 {

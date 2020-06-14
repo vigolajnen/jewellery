@@ -23,6 +23,11 @@
     background-image: url("../img/promo/promo-cat-mob.jpg");
   }
 
+  @media (max-width: $mobile-xs) {
+    padding: 78px 36px 86px;
+    margin: 0;
+  }
+
   & h1 {
     max-width: 100%;
     margin: 0;
@@ -77,6 +82,10 @@
       background-image: url("../img/promo/promo-bg-mob.jpg");
     }
 
+    @media (max-width: $mobile-xs) {
+      padding: 186px 42px 182px;
+    }
+
     & h1 {
       max-width: 100%;
       font-size: 45px;
@@ -86,9 +95,15 @@
       color: #ffffff;
       text-align: center;
 
+      @media (max-width: 768px) {
+        padding-right: 17px;
+        line-height: 125%;
+      }
+
       @media (max-width: $mobile-xs) {
+        padding: 0;
         font-size: 38px;
-        line-height: 130%;
+        line-height: 125%;
       }
     }
 
@@ -99,7 +114,12 @@
 
       color: #ffffff;
 
+      @media (max-width: 768px) {
+        padding-right: 17px;
+      }
+
       @media (max-width: $mobile-xs) {
+        padding: 0;
         font-size: 34px;
       }
     }

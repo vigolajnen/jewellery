@@ -4,6 +4,11 @@
   box-sizing: border-box;
   overflow: hidden;
 
+  @media (max-width: $mobile) {
+    padding-top: 29px;
+    margin-bottom: 40px;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

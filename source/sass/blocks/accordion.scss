@@ -17,8 +17,16 @@
       padding: 50px;
     }
 
+    @media (max-width: 768px) {
+      padding: 44px 50px;
+    }
+
     @media (max-width: $mobile) {
       padding: 22px;
+    }
+
+    @media (max-width: $mobile-xs) {
+      padding: 17px 23px 20px;
     }
 
     &:not(:last-child) {
@@ -38,16 +46,37 @@
         font-size: 16px;
         line-height: 140%;
       }
+
+      @media (max-width: $mobile-xs) {
+        width: 90%;
+
+        & span {
+          display: block;
+        }
+      }
     }
 
     & svg {
-      padding-right: 8px;
+      position: absolute;
+      top: 37px;
+      right: 48px;
+      padding-right: 0;
       fill: transparent;
-      width: 15px;
-      height: 8px;
+      width: 19px;
+      height: 20px;
 
       transform: rotate(180deg);
       transition: 0.5s;
+
+      @media (max-width: $table) {
+        top: 44px;
+        right: 52px;
+      }
+
+      @media (max-width: $mobile-xs) {
+        top: 12px;
+        right: 25px;
+      }
     }
 
     &--active {
@@ -57,10 +86,33 @@
         padding-left: 6px;
         max-height: 300px;
         opacity: 1;
+
+        @media (max-width: 768px) {
+          padding-top: 25px;
+          padding-left: 0;
+        }
+
+        @media (max-width: $mobile-xs) {
+          padding-top: 14px;
+          padding-right: 35px;
+          line-height: 143%;
+        }
       }
 
       & svg {
+        top: 48px;
+        right: 46px;
         transform: rotate(0deg);
+
+        @media (max-width: $table) {
+          top: 48px;
+          right: 50px;
+        }
+
+        @media (max-width: $mobile-xs) {
+          top: 23px;
+          right: 23px;
+        }
       }
     }
   }
@@ -80,6 +132,12 @@
     font-weight: normal;
 
     transition: max-height 0.2s ease-out;
+
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      max-width: 540px;
+    }
 
     @media (max-width: $mobile) {
       font-size: 14px;

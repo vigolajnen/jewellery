@@ -9,14 +9,14 @@
   &__list {
     padding: 0;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     list-style: none;
 
     &--small {
-      margin-bottom: 25px;
+      margin-bottom: 33px;
 
       & .navigation__item {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
 
       & .navigation__link {
@@ -31,6 +31,10 @@
 
   &__item {
     margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 21px;
+    }
   }
 
   &__link {

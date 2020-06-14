@@ -2,10 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 70px;
+  padding-top: 80px;
   box-sizing: border-box;
 
   @media (max-width: $table) {
+    padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-xs) {
     padding-top: 40px;
   }
 
@@ -48,8 +52,8 @@
   &__btn {
     display: none;
     width: 100%;
-    padding: 20px;
-    margin-bottom: 30px;
+    padding: 23px;
+    margin-bottom: 50px;
     font-family: "Poppins Medium", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -70,6 +74,10 @@
 
     @media (max-width: $table) {
       display: block;
+    }
+
+    @media (max-width: $mobile-xs) {
+      margin-bottom: 40px;
     }
   }
 
@@ -183,14 +191,28 @@
     line-height: 130%;
 
     border-top: 1px solid #f6f5f4;
+
+    @media (max-width: 768px) {
+      padding-top: 33px;
+      padding-bottom: 75px;
+    }
+
+    @media (max-width: $mobile-xs) {
+      padding-top: 18px;
+      padding-bottom: 69px;
+    }
   }
 
   &__nav-container {
-    padding: 0 7% 0 29%;
+    padding: 0 7% 0 15%;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 1920px) {
+      padding: 0 7% 0 29%;
+    }
 
     @media (max-width: $table) {
       padding: 0 45px;
@@ -198,6 +220,17 @@
 
     @media (max-width: $mobile) {
       padding: 0 15px;
+    }
+
+    @media (max-width: $mobile-xs) {
+      justify-content: center;
+    }
+  }
+
+  &__button-prev,
+  &__button-next {
+    @media (max-width: $mobile-xs) {
+      display: none;
     }
   }
 
@@ -223,6 +256,11 @@
       width: 30%;
     }
 
+    @media (max-width: 768px) {
+      margin-bottom: 28px;
+      margin-right: 33px;
+    }
+
     @media (max-width: $mobile) {
       flex-grow: 1;
       width: calc(50% - 15px);
@@ -236,9 +274,61 @@
         margin-right: 15px;
       }
     }
+
+    @media (max-width: $mobile-xs) {
+      width: calc(50% - 25px);
+      margin-right: 25px;
+      margin-bottom: 26px;
+
+      &:nth-child(3n) {
+        margin-right: 25px;
+      }
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    &.product-preview {
+      & img {
+        margin-bottom: 18px;
+
+        @media (max-width: 768px) {
+          margin-bottom: 9px;
+        }
+
+        @media (max-width: $mobile-xs) {
+          margin-bottom: 4px;
+        }
+      }
+
+      & h3 {
+        padding: 0;
+        padding-left: 5px;
+        text-align: center;
+
+        @media (max-width: 768px) {
+          margin-top: 12px;
+          padding-left: 0;
+        }
+
+        & span {
+          margin-top: -11px;
+
+          @media (max-width: $mobile-xs) {
+            margin-top: 0;
+            display: inline;
+          }
+        }
+      }
+    }
   }
 
   &__pagination {
     padding-right: 33px;
+
+    @media (max-width: $mobile-xs) {
+      padding-right: 0;
+    }
   }
 }

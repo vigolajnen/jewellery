@@ -16,6 +16,10 @@
       opacity: 0.5;
     }
 
+    @media (max-width: $mobile-xs) {
+      padding: 0 10px;
+    }
+
     &--active {
       color: $primary-color;
     }

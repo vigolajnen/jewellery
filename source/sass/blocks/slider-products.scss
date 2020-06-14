@@ -4,6 +4,24 @@
   padding-bottom: 70px;
   text-align: center;
 
+  @media (max-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-xs) {
+    padding-top: 62px;
+    padding-bottom: 20px;
+  }
+
+  &--page-item {
+    padding-bottom: 115px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 62px;
+    }
+  }
+
   & h2 {
     margin: 0;
     margin-bottom: 24px;
@@ -42,6 +60,16 @@
   &__wrapper {
     padding-top: 60px;
     margin-bottom: 83px;
+
+    @media (max-width: 768px) {
+      padding-top: 53px;
+      margin-bottom: 72px;
+    }
+
+    @media (max-width: $mobile-xs) {
+      padding-top: 48px;
+      margin-bottom: 65px;
+    }
   }
 
   & .swiper-pagination-bullet {

@@ -59,3 +59,13 @@
     transform: scale(1);
   }
 }
+
+.filter-form .accordion__item svg {
+  top: 17px;
+  right: 23px;
+}
+
+.filter-form .accordion__item.accordion__item--active svg {
+  top: 29px;
+  right: 22px;
+}

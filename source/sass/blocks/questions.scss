@@ -2,11 +2,26 @@
   padding-top: 45px;
   padding-bottom: 58px;
 
+  @media (max-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-xs) {
+    padding-top: 14px;
+  }
+
   & h2 {
     margin-bottom: 48px;
 
     letter-spacing: 0.03em;
     text-align: center;
+
+    @media (max-width: $mobile-xs) {
+      margin-bottom: 30px;
+      letter-spacing: 0.06em;
+      line-height: 135%;
+    }
   }
 
   &__accordion {
