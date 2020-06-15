@@ -141,6 +141,7 @@
       &:hover,
       &:active {
         outline: none;
+        color: $primary-color;
       }
 
       @media (max-width: 768px) {
