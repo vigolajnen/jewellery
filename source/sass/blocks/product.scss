@@ -14,7 +14,7 @@
   & h1 {
     margin: 0;
     padding-bottom: 12px;
-    font-family: "Cormorant Garamond", sans-serif;
+    font-family: $titleFont;
     font-style: normal;
     font-weight: bold;
     font-size: 34px;
@@ -126,7 +126,7 @@
     padding: 24px;
     margin-bottom: 17px;
 
-    font-family: "Poppins Medium", sans-serif;
+    font-family: $mainFontMedium;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -156,7 +156,7 @@
     justify-content: space-between;
     align-items: center;
 
-    font-family: "Poppins Medium", sans-serif;
+    font-family: $mainFontMedium;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;

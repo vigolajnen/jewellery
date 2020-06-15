@@ -1,9 +1,11 @@
 // Глобальные переменные
 
-$mainFont: "Poppins", sans-serif;
-$mainFontBold: "Poppins Medium", sans-serif;
-$titleFont: "Cormorant Garamond", serif;
-$titleFontItalic: "Cormorant Garamond Italic", serif;
+$mainFont: "Poppins", "Arial", "Helvetica CY", sans-serif;
+$mainFontMedium: "Poppins Medium", "Arial", "Helvetica CY", sans-serif;
+$mainFontBold: "Poppins Bold", "Arial", "Helvetica CY", sans-serif;
+
+$titleFont: "Cormorant Garamond", "Arial", "Helvetica CY", serif;
+$titleFontItalic: "Cormorant Garamond Italic", "Arial", "Helvetica CY", serif;
 
 // Size
 $mainFontSize: 16px;

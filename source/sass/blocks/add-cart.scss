@@ -36,7 +36,7 @@
       & a {
         width: calc(50% - 15px);
         padding: 20px;
-        font-family: "Poppins Medium", sans-serif;
+        font-family: $mainFontMedium;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -85,7 +85,7 @@
     & h3 {
       margin: 0;
       margin-bottom: 20px;
-      font-family: "Cormorant Garamond", sans-serif;
+      font-family: $titleFont;
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -101,7 +101,7 @@
   }
 
   &__total {
-    font-family: "Poppins Medium", sans-serif;
+    font-family: $mainFontMedium;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;

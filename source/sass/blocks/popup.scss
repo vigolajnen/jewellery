@@ -93,7 +93,7 @@
     & button[type="reset"] {
       width: 100%;
       padding: 20px;
-      font-family: "Poppins Medium", sans-serif;
+      font-family: $mainFontMedium;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -173,7 +173,7 @@
 
       & a {
         display: block;
-        font-family: "Poppins Medium", sans-serif;
+        font-family: $mainFontMedium;
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -214,7 +214,7 @@
     & input {
       width: 100%;
       padding-bottom: 15px;
-      font-family: "Poppins Medium", sans-serif;
+      font-family: $mainFontMedium;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -246,7 +246,7 @@
       width: 100%;
       padding: 20px;
       margin-bottom: 30px;
-      font-family: "Poppins Medium", sans-serif;
+      font-family: $mainFontMedium;
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -269,7 +269,7 @@
 
     & p {
       margin: 0;
-      font-family: "Poppins Medium", sans-serif;
+      font-family: $mainFontMedium;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -283,7 +283,7 @@
     }
 
     & a {
-      font-family: "Poppins Medium", sans-serif;
+      font-family: $mainFontMedium;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;

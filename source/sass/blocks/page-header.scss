@@ -118,7 +118,7 @@
     & input {
       width: 100%;
       padding-left: 30px;
-      font-family: "Poppins Medium", sans-serif;
+      font-family: $mainFontMedium;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -178,7 +178,7 @@
 
   &__login-popup {
     margin-right: 37px;
-    font-family: "Poppins Medium", sans-serif;
+    font-family: $mainFontMedium;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -217,7 +217,7 @@
   }
 
   &__cart {
-    font-family: "Poppins Medium", sans-serif;
+    font-family: $mainFontMedium;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
