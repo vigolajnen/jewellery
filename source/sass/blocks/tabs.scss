@@ -39,6 +39,14 @@
 
     box-sizing: border-box;
 
+    @media (max-width: $mobile) {
+      margin-right: 10px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
     &--active {
       position: relative;
       color: #1d1613;

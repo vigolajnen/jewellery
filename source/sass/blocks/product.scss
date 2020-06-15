@@ -7,7 +7,7 @@
     padding-top: 19px;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: $mobile-xs) {
     padding-top: 0;
   }
 
@@ -41,7 +41,7 @@
       width: 47.5%;
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: $mobile-xs) {
       width: 100%;
       padding-top: 0;
     }
@@ -87,7 +87,7 @@
         margin-bottom: 14px;
       }
 
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile-xs) {
         max-height: 260px;
         margin-bottom: 40px;
       }
@@ -112,6 +112,10 @@
     }
 
     @media (max-width: $mobile) {
+      padding-left: 20px;
+    }
+
+    @media (max-width: $mobile-xs) {
       width: 100%;
       padding: 0;
     }
@@ -165,7 +169,7 @@
     color: #9b9997;
 
     & span {
-      @media (max-width: $mobile-xs) {
+      @media (max-width: $mobile) {
         display: block;
         width: 25%;
         font-size: 12px;
