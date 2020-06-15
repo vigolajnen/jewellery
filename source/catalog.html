@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body class="page">
+  <body class="page catalog">
     <header class="page-header">
       <div class="page-header__container container">
         <form
@@ -17,7 +17,7 @@
           action="https://echo.htmlacademy.ru"
           method="post"
         >
-          <label for="search">
+          <label for="search" aria-label="Type here to search">
             <input id="search" type="text" placeholder="Type here to search" />
           </label>
         </form>
@@ -30,7 +30,11 @@
             <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
           </svg>
         </button>
-        <a class="page-header__logo logo" href="main.html">
+        <a
+          class="page-header__logo logo"
+          href="main.html"
+          aria-label="Логотип компании"
+        >
           <svg
             width="66"
             height="66"
@@ -117,13 +121,13 @@
       </p>
     </section>
 
-    <div class="catalog container">
+    <div class="catalog__wrapper container">
       <aside class="catalog__sidebar">
         <button id="popup-filter-btn" class="catalog__btn" type="button">
           Filter
         </button>
         <form
-          class="catalog__form filter-form"
+          class="filter-form"
           action="https://echo.htmlacademy.ru"
           method="post"
         >
@@ -187,7 +191,7 @@
         </form>
       </aside>
       <div class="catalog__content">
-        <div class="catalog__wrapper">
+        <div class="catalog__inner">
           <a class="catalog__item product-preview" href="#">
             <!-- 1х: 270px; 2x: 540px -->
             <img
@@ -337,7 +341,7 @@
     </div>
     <div class="catalog__nav">
       <div class="catalog__nav-container container">
-        <div class="catalog__button-prev">Previous</div>
+        <button class="catalog__button-prev">Previous</button>
         <div class="catalog__pagination pagination">
           <a class="pagination__link pagination__link--active" href="#">1</a>
           <a class="pagination__link" href="#">2</a>
@@ -345,7 +349,7 @@
           <a class="pagination__link" href="#">4</a>
           <a class="pagination__link" href="#">5</a>
         </div>
-        <div class="catalog__button-next">Next</div>
+        <button class="catalog__button-next">Next</button>
       </div>
     </div>
 
@@ -490,7 +494,7 @@
             </svg>
           </button>
           <form
-            class="catalog__form filter-form"
+            class="filter-form"
             action="https://echo.htmlacademy.ru"
             method="post"
           >
