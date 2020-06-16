@@ -1,6 +1,14 @@
 .accordion {
+  box-sizing: border-box;
+
   &--main {
     & .accordion__item {
+      min-height: 111px;
+
+      @media (max-width: $mobile) {
+        min-height: auto;
+      }
+
       & svg {
         @media (max-width: $mobile-xs) {
           position: absolute;
@@ -20,9 +28,29 @@
     }
   }
 
+  &--filter {
+    & .accordion__item {
+      padding: 24px 21px 20px 23px;
+      box-sizing: border-box;
+    }
+
+    & .accordion__item--active .accordion__text {
+      padding-top: 23px;
+      padding-left: 9px;
+    }
+
+    & .accordion__item svg {
+      transform: rotate(180deg) translateY(10px);
+    }
+
+    & .accordion__item.accordion__item--active svg {
+      transform: rotate(0deg) translateY(5px);
+    }
+  }
+
   &__item {
     position: relative;
-    padding: 42px 42px 45px;
+    padding: 42px 47px 42px 45px;
 
     display: flex;
     flex-wrap: wrap;

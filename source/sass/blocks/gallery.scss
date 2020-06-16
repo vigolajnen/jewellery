@@ -1,12 +1,12 @@
 .gallery {
-  padding-top: 58px;
+  padding-top: 61px;
   padding-bottom: 127px;
   text-align: center;
   overflow: hidden;
 
   @media (max-width: 768px) {
     padding-top: 42px;
-    padding-bottom: 43px;
+    padding-bottom: 80px;
   }
 
   @media (max-width: $mobile) {
@@ -15,7 +15,7 @@
 
   @media (max-width: $mobile-xs) {
     padding-top: 29px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 
   & h2 {
@@ -64,7 +64,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    height: 490px;
+    height: 480px;
 
     width: 100%;
     box-sizing: border-box;
@@ -115,10 +115,16 @@
         order: 2;
         margin-left: 5px;
         max-width: 145px;
+        transform: translateY(-30px);
       }
 
       &--horiz {
         order: 1;
+        transform: translateY(-30px);
+      }
+
+      &--small {
+        transform: translateY(-13px);
       }
     }
 
