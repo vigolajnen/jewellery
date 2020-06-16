@@ -1,4 +1,25 @@
 .accordion {
+  &--main {
+    & .accordion__item {
+      & svg {
+        @media (max-width: $mobile-xs) {
+          position: absolute;
+          top: 12px;
+          right: 25px;
+        }
+      }
+
+      &--active {
+        & svg {
+          @media (max-width: $mobile-xs) {
+            top: 23px;
+            right: 23px;
+          }
+        }
+      }
+    }
+  }
+
   &__item {
     position: relative;
     padding: 42px 42px 45px;
@@ -72,12 +93,6 @@
         // top: 44px;
         // right: 52px;
       }
-
-      @media (max-width: $mobile-xs) {
-        position: absolute;
-        top: 12px;
-        right: 25px;
-      }
     }
 
     &--active {
@@ -108,11 +123,6 @@
         @media (max-width: $table) {
           // top: 48px;
           // right: 50px;
-        }
-
-        @media (max-width: $mobile-xs) {
-          top: 23px;
-          right: 23px;
         }
       }
     }

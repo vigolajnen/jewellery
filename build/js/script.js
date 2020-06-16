@@ -213,9 +213,8 @@
   var inputCount = document.querySelector('.update-input');
   var count = 1;
 
-  inputCount.value = count;
-
   if (inputCount) {
+    inputCount.value = count;
     inputCount.addEventListener('keyup', function () {
       var value = inputCount.value;
       var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
@@ -231,6 +230,7 @@
   }
 
   if (btnPlus) {
+    inputCount.value = count;
     btnPlus.addEventListener('click', function (evt) {
       evt.preventDefault();
 

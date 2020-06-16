@@ -37,6 +37,10 @@
 
     width: 100%;
 
+    @media (max-width: 1300px) {
+      align-items: flex-start;
+    }
+
     @media (max-width: 768px) {
       padding-right: 100px;
     }

@@ -27,12 +27,6 @@
       max-width: 100%;
     }
 
-    & .accordion {
-      margin-bottom: 38px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
     & h3 {
       font-style: normal;
       font-weight: 500;
@@ -40,14 +34,28 @@
       line-height: 130%;
     }
 
+    & .accordion {
+      margin-bottom: 33px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
     & .accordion__item {
-      padding: 25px 17px 18px 23px;
+      padding: 24px 21px 20px 23px;
       box-sizing: border-box;
     }
 
     & .accordion__item--active .accordion__text {
       padding-top: 23px;
       padding-left: 9px;
+    }
+
+    & .accordion__item svg {
+      transform: rotate(180deg) translateY(10px);
+    }
+
+    & .accordion__item.accordion__item--active svg {
+      transform: rotate(0deg) translateY(5px);
     }
   }
 
@@ -125,7 +133,7 @@
     }
 
     @media (max-width: $mobile-xs) {
-      padding-top: 18px;
+      padding-top: 16px;
       padding-bottom: 69px;
     }
   }
@@ -216,7 +224,7 @@
         }
 
         @media (max-width: $mobile-xs) {
-          margin-bottom: 4px;
+          margin-bottom: 7px;
         }
       }
 
