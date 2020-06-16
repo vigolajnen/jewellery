@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page">
+  <body class="page item">
     <header class="page-header">
       <div class="page-header__container container">
         <form class="page-header__search" action="https://echo.htmlacademy.ru" method="post">
@@ -71,25 +71,27 @@
         </div>
       </div>
     </header>
-    <ul class="links-list links-list--bottom">
-      <li class="links-list__item">
-        <a href="#">What’s new</a>
-      </li>
-      <li class="links-list__item">
-        <a href="#">Chokers</a>
-      </li>
-      <li class="links-list__item">
-        <a href="#">Necklaces</a>
-      </li>
-      <li class="links-list__item">
-        <a href="#">Rings</a>
-      </li>
-      <li class="links-list__item">
-        <a href="#">Earrings</a>
-      </li>
-    </ul>
+    <nav class="nav-links">
+      <ul class="nav-links__list nav-links__list--bottom">
+        <li class="nav-links__item">
+          <a href="#">What’s new</a>
+        </li>
+        <li class="nav-links__item">
+          <a href="#">Chokers</a>
+        </li>
+        <li class="nav-links__item">
+          <a href="#">Necklaces</a>
+        </li>
+        <li class="nav-links__item">
+          <a href="#">Rings</a>
+        </li>
+        <li class="nav-links__item">
+          <a href="#">Earrings</a>
+        </li>
+      </ul>
+    </nav>
     <div class="container">
-      <section class="product">
+      <section class="item__info product">
         <div class="product__slider">
           <div class="swiper-container product__slider-left">
             <div class="swiper-wrapper">
@@ -156,7 +158,7 @@
           </div>
         </div>
       </section>
-      <section class="slider-products slider-products--page-item">
+      <section class=" item__slider slider-products">
         <div id="new-products" class="swiper-container">
           <h2>You May Also Like</h2>
           <a href="catalog.html">Shop Now</a>

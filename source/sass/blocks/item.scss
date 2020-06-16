@@ -1,0 +1,19 @@
+.item {
+  &__info {
+    padding-bottom: 60px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__slider {
+    padding-top: 60px;
+    padding-bottom: 115px;
+
+    @media (max-width: 768px) {
+      padding-top: 30px;
+      padding-bottom: 62px;
+    }
+  }
+}
