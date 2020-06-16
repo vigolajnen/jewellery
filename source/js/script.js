@@ -207,4 +207,52 @@
       page.classList.remove('page--overlay');
     });
   }
+
+  var btnPlus = document.querySelector('button[aria-label="Кнопка плюс"]');
+  var btnMinus = document.querySelector('button[aria-label="Кнопка минус"]');
+  var inputCount = document.querySelector('.update-input');
+  var count = 1;
+
+  inputCount.value = count;
+
+  if (inputCount) {
+    inputCount.addEventListener('keyup', function () {
+      var value = inputCount.value;
+      var rep = /[-\.;":'a-zA-Zа-яА-Я]/;
+      if (rep.test(value)) {
+        value = value.replace(rep, '');
+        inputCount.value = value;
+      }
+
+      if (value === '') {
+        inputCount.value = count;
+      }
+    });
+  }
+
+  if (btnPlus) {
+    btnPlus.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      count = parseInt(inputCount.value, 10);
+      count = count + 1;
+
+      inputCount.value = count;
+
+      return count;
+    });
+
+    btnMinus.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      if (count >= 1) {
+        count = parseInt(inputCount.value, 10);
+        count = count - 1;
+
+        inputCount.value = count;
+      }
+
+      return count;
+    });
+
+  }
 })();
