@@ -38,11 +38,14 @@
     box-sizing: border-box;
 
     @media (max-width: $table) {
+      justify-content: space-between;
       width: 47.5%;
+      max-width: 330px;
     }
 
     @media (max-width: $mobile-xs) {
       width: 100%;
+      max-width: 100%;
       padding-top: 0;
     }
 
